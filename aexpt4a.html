@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        ELEGANT BAGS
+    </title>
+<style>
+    .navbar {
+    overflow: hidden;
+    background-color: #d0d0cef6;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgba(33, 33, 33, 0.386);
+    text-align: center;
+    padding: 10px 120px;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    float: left;
+    overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color:  rgba(63, 57, 57, 0.386);
+    padding: 10px 100px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color:#ddd;
+;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  rgba(71, 71, 71, 0.386);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 83px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+    .show {
+    display: block;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    .column {
+      float: left;
+      width: 16.66%;
+      padding: 5px;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+</style>
+</head>
+<body>
+    <body style="background-color:rgba(234, 234, 232, 0.94);" >
+        <p style="text-align:center;color:rgb(250, 5, 136);font-size:200%;"><b>ELEGANT BAGS</b></p>
+        <div class="navbar">
+          <a href="#home"><h3><b>Home</b></h3></a>
+          <a href="#news"><h3><b>About</b></h3></a>
+          <a href="#news"><h3><b>Go Pro</b></h3></a>
+          <a href="#news"><h3><b>Contact</b></h3></a>
+          <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()"><h3><b>Explore</b></h3>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#"><h3>My wishlist</h3></a>
+            <a href="#"><h3>My orders</h3></a>
+            <a href="#"><h3>Track orders</h3></a>
+          </div>
+          </div> 
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+        <p style="text-align:center;color:rgb(175, 2, 112);font-size:100%;"> <h1><marquee bgcolor="grey">Behind every women,there is a successful bag!! Life is to short to carry the boring bag!!</marquee> </h1></p>
+        <div class="row">
+          <br>
+            <div class="column">
+              <img src="bag 1.jpg" alt="bagpic" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="bag 2.jpg" alt="bagpic" style="width:150%">
+            </div>
+            <div class="column">
+              <img src="bag 3.jpg" alt="bagpic" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="bag 4.jpg" alt="bagpic" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="bag 5.jpg" alt="bagpic" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="bag 6.jpg" alt="bagpic" style="width:100%">
+            </div>
+        </div> 
+
+<form name="myForm" action="./aexp4.php" method="post" onsubmit="return(validate())">
+    <font-color:"black";font-family:"Timesnewroman";font-size:"20px">
+        <p><b>NAME:</b></p>
+        <input type="text" id ="name" name="name">
+        <br>
+        <p><b>PHONE NUMBER:</b></p>
+        <input type="text" id ="phno" name="phno">
+        <br>
+        <p><b>ADDRESS:</b></p>
+        <textarea id="address" name="address" rows="5" cols="40" placeholder="..Enter your address here.....">
+        </textarea>
+        <br>
+        <fieldset>
+            <legend><b>TYPE OF HAND BAG NEEDED:</b></legend>
+                <input type="radio" id="bagtype" name="bagtype" value="A">
+                HOBO<br>
+                <input type="radio" id="bagtype" name="bagtype" value="B">
+                BAGUTTE<br>
+                <input type="radio" id="bagtype" name="bagtype" value="C">
+                DUFFLE<br>
+                <input type="radio" id="bagtype" name="bagtype" value="D">
+                SHOPPER<br>
+                <input type="radio" id="bagtype" name="bagtype" value="E">
+                WRISTLET<br>
+                <input type="radio" id="bagtype" name="bagtype" value="F">
+                BUCKET<br>
+                <input type="radio" id="bagtype" name="bagtype" value="G">
+                TOTE<br>
+                <input type="radio" id="bagtype" name="bagtype" value="H">
+                SATCHEL<br>
+                <input type="radio" id="bagtype" name="bagtype" value="I">
+                CLUTCH<br>
+                <input type="radio" id="bagtype" name="bagtype" value="J">
+                MESSENGER<br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>MATERIAL OF HAND-BAG:</b></legend>
+                <input type="radio" id="bagmaterial" name="bagmaterial" value="a">
+                TEXTILE<br>
+                <input type="radio" id="bagmaterial" name="bagmaterial" value="b">
+                LEATHER<br>
+                <input type="radio" id="bagmaterial" name="bagmaterial" value="c">
+                SYNTHETIC FIBER<br>
+                <input type="radio" id="bagmaterial" name="bagmaterial" value="d">
+                JUTE<br>
+                <input type="radio" id="bagmaterial" name="bagmaterial" value="e">
+                NYLON<br>
+                <input type="radio" id="bagmaterial" name="bagmaterial" value="f">
+                STRAW<br>
+        </fieldset>
+        <br>
+        <p><b>COLOR OF THE BAG:</b></p>
+        <input type="color" id="favcolor" name="favcolor" value="#000000">
+        <p><b>SIZE OF BAG(in inches):</b></p>
+        <input type="number" id="bagsize" name="bagsize"><br>
+        <br>
+        <fieldset>
+        <legend><b>COST RANGE OF EACH BAG:</b></legend>
+            <p>FROM:</p>
+            <input type="text" id ="bagcostfrom" name="bagcostfrom"><br>
+            <p>TO:</p>
+            <input type="text" id ="bagcostto" name="bagcostto"><br>
+        </fieldset>
+        <br>
+        <p><b>TEXT/URL OF THE IMAGE TO BE PRINTED IN BAG:</b></p>
+        <textarea id="textprint" name="textprint" rows="5" cols="40">
+        ..Enter here.....
+        </textarea>
+        <br>
+        <p><b>NUMBER OF BAGS NEEDED:</b></p>
+        <input type="number" id="bagno" name="bagno"><br>
+        <br>
+        <button onclick="validateForm()">proceed</button>
+        <input type="submit" name="btn">
+</form>
+
+</body>
+<script type="text/javascript">    
+  function validate() {
+      if( document.myForm.name.value == "" ) {
+          alert( "Please enter your Name!" );
+          document.myForm.name.focus() ;
+          return false;
+          }
+      if( document.myForm.phno.value == "" ) {
+          alert( "Please enter your phone number!" );
+          document.myForm.phno.focus() ;
+          return false;
+          }
+      if( document.myForm.address.value == "" ) {
+          alert( "Please enter your address!" );
+          document.myForm.address.focus() ;
+          return false;
+          }
+      if( document.myForm.bagtype.value == "" ) {
+          alert( "Select type of handbag needed!" );
+          document.myForm.bagtype.focus() ;
+          return false;
+          }
+      if( document.myForm.bagmaterial.value == "" ) {
+          alert( "Select material of handbag needed!" );
+          document.myForm.bagmaterial.focus() ;
+          return false;
+          }
+      if( document.myForm.favcolor.value == "" ) {
+          alert( "Select the colour of the bag needed!" );
+          document.myForm.favcolor.focus() ;
+          return false;
+          }
+      if( document.myForm.bagsize.value == "" ) {
+          alert( "Please enter the needed bag size!" );
+          document.myForm.bagsize.focus() ;
+          return false;
+          }
+      if( document.myForm.bagcostfrom.value == "" ) {
+          alert( "Please enter cost range of your bag(from value)!" );
+          document.myForm.bagcostfrom.focus() ;
+          return false;
+          }
+      if( document.myForm.bagcostto.value == "" ) {
+          alert( "Please enter cost range of your bag(to value)!" );
+          document.myForm.bagcostto.focus() ;
+          return false;
+          }
+      if( document.myForm.textprint.value == "" ) {
+          alert( "Please enter the content to be printed in your bag" );
+          document.myForm.textprint.focus() ;
+          return false;
+          }
+      if( document.myForm.bagno.value == "" ) {
+          alert( "Please enter number of bags needed!" );
+          document.myForm.bagno.focus() ;
+          return false;
+          }
+      return( true );
+      
+  }
+  </script>
+</html>
